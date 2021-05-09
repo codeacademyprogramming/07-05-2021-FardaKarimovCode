@@ -1,42 +1,26 @@
-class Customers { 
-  async getProducts(){
-    try{
-    let tableData = await fetch("data.json");
-    let customers=tableData.json();
-    return customers; 
-    }catch(error){
-      console.log(errors)
-    }
-  }
-}
-window.addEventListener("DOMContentLoaded",()=>{
-var product=new Customers();
-product.getProducts().then(data=>console.log(data))
-start();
-});
 
 var tableData = [
   {
- "img": "john_martin.jpg","id" : 0,"name": "Ted","loans": [{"amount": {"value": 13000,"currency": "AZN"},"closed":false,"loaner": "PASHA Bank","period": {"type": "month","value": 36},"perMonth": {"value": 611.84,"currency": "AZN" },"dueAmount": {"value": 4200,"currency": "AZN"},"loanPeriod": {"end": "22.01.2022","start": "22.01.2019"},"interestRate": 18},{"amount": {"value": 5000,"currency": "AZN"},"closed": false,"loaner": "TBC","period": {"type": "month","value": 12},"perMonth": {"value": 416.66,"currency": "AZN"},"dueAmount": {"value": 2916,"currency": "AZN"},"loanPeriod": {"end": "03.01.2022","start": "03.01.2021"
+ "img": "./PYP-Day-05/assets/john_martin.jpg","id" : 0,"name": "Ted","loans": [{"amount": {"value": 13000,"currency": "AZN"},"closed":false,"loaner": "PASHA Bank","period": {"type": "month","value": 36},"perMonth": {"value": 611.84,"currency": "AZN" },"dueAmount": {"value": 4200,"currency": "AZN"},"loanPeriod": {"end": "22.01.2022","start": "22.01.2019"},"interestRate": 18},{"amount": {"value": 5000,"currency": "AZN"},"closed": false,"loaner": "TBC","period": {"type": "month","value": 12},"perMonth": {"value": 416.66,"currency": "AZN"},"dueAmount": {"value": 2916,"currency": "AZN"},"loanPeriod": {"end": "03.01.2022","start": "03.01.2021"
 }, "interestRate": 22},{"amount": { "value": 8500, "currency": "AZN"
 },"closed": true,"loaner": "Revolut","period": {"type": "month", "value": 24
 },"perMonth": {"value": 154.25,"currency": "AZN"},"dueAmount": {"value": 151.5,
 "currency": "AZN"},"loanPeriod": {"end": "22.01.2018","start": "22.01.2016"},
 "interestRate": 19}],"salary": {"value": 4500,"currency": "AZN"},"surname": "Berners", "hasSalaryCard": true,"hasLoanHistory": true },
-{"img": "01-shutterstock_476340928-Irina-Bg.jpg","id" : 1,"name": "Juliana","loans": [{"amount": {"value": 13000,"currency": "AZN"},"closed":false,"loaner": "PASHA Bank","period": {"type": "month","value": 36},"perMonth": {"value": 578.11,"currency": "AZN" },"dueAmount": {"value": 4200,"currency": "AZN"},"loanPeriod": {"end": "22.01.2022","start": "22.01.2019"},"interestRate": 18},{"amount": {"value": 5000,"currency": "AZN"},"closed": false,"loaner": "TBC","period": {"type": "month","value": 12},"perMonth": {"value": 416.66,"currency": "AZN"},"dueAmount": {"value": 2916,"currency": "AZN"},"loanPeriod": {"end": "03.01.2022","start": "03.01.2021"
+{"img": "./PYP-Day-05/assets/01-shutterstock_476340928-Irina-Bg.jpg","id" : 1,"name": "Juliana","loans": [{"amount": {"value": 13000,"currency": "AZN"},"closed":false,"loaner": "PASHA Bank","period": {"type": "month","value": 36},"perMonth": {"value": 578.11,"currency": "AZN" },"dueAmount": {"value": 4200,"currency": "AZN"},"loanPeriod": {"end": "22.01.2022","start": "22.01.2019"},"interestRate": 18},{"amount": {"value": 5000,"currency": "AZN"},"closed": false,"loaner": "TBC","period": {"type": "month","value": 12},"perMonth": {"value": 416.66,"currency": "AZN"},"dueAmount": {"value": 2916,"currency": "AZN"},"loanPeriod": {"end": "03.01.2022","start": "03.01.2021"
 }, "interestRate": 22},{"amount": { "value": 8500, "currency": "AZN"
 },"closed": true,"loaner": "Revolut","period": {"type": "month", "value": 24
 },"perMonth": {"value": 845.5,"currency": "AZN"},"dueAmount": {"value": 387.45,
 "currency": "AZN"},"loanPeriod": {"end": "22.01.2018","start": "22.01.2016"},
 "interestRate": 19}],"salary": {"value": 1400,"currency": "AZN"},"surname": "Morris", "hasSalaryCard": true,"hasLoanHistory": true },
-{"img": "1bf656d56b5efcf9f4fa0e4e87701845e0e29e36.jpg","id" : 2,"name": "Alberto","loans": [{"amount": {"value": 13000,"currency": "AZN"},"closed":false,"loaner": "Bank of America","period": {"type": "month","value": 36},"perMonth": {"value": 485.7,"currency": "USD" },"dueAmount": {"value": 4200,"currency": "AZN"},"loanPeriod": {"end": "22.01.2022","start": "22.01.2019"},"interestRate": 18},{"amount": {"value": 5000,"currency": "AZN"},"closed": false,"loaner": "C.P.Morgan","period": {"type": "month","value": 12},"perMonth": {"value": 157.6,"currency": "AZN"},"dueAmount": {"value": 2916,"currency": "AZN"},"loanPeriod": {"end": "03.01.2022","start": "03.01.2021"
+{"img": "./PYP-Day-05/assets/1bf656d56b5efcf9f4fa0e4e87701845e0e29e36.jpg","id" : 2,"name": "Alberto","loans": [{"amount": {"value": 13000,"currency": "AZN"},"closed":false,"loaner": "Bank of America","period": {"type": "month","value": 36},"perMonth": {"value": 485.7,"currency": "USD" },"dueAmount": {"value": 4200,"currency": "AZN"},"loanPeriod": {"end": "22.01.2022","start": "22.01.2019"},"interestRate": 18},{"amount": {"value": 5000,"currency": "AZN"},"closed": false,"loaner": "C.P.Morgan","period": {"type": "month","value": 12},"perMonth": {"value": 157.6,"currency": "AZN"},"dueAmount": {"value": 2916,"currency": "AZN"},"loanPeriod": {"end": "03.01.2022","start": "03.01.2021"
 }, "interestRate": 22},{"amount": { "value": 8500, "currency": "AZN"
 },"closed": true,"loaner": "Revolut","period": {"type": "month", "value": 24
 },"perMonth": {"value": 275.5,"currency": "AZN"},"dueAmount": {"value": 287.45,
 "currency": "AZN"},"loanPeriod": {"end": "22.01.2017","start": "22.01.2016"},
 "interestRate": 19}],"salary": {"value": 4100,"currency": "AZN"},"surname": "Gates", "hasSalaryCard": true,"hasLoanHistory": true },
 {
-         "img": "images.jpg",
+         "img": "./PYP-Day-05/assets/images.jpg",
          "id":3,
          "name": "Henry",
          "loans": [
@@ -128,7 +112,7 @@ var tableData = [
          "hasLoanHistory": false
        },
        {
-          "img": "profile-photos-4.jpg",
+          "img": "./PYP-Day-05/assets/profile-photos-4.jpg",
           "id":4,
           "name": "Tanya",
           "loans": [
@@ -220,7 +204,7 @@ var tableData = [
           "hasLoanHistory": true
         },
         {
-           "img": "social-media-profile-photos-3.jpg",
+           "img": "./PYP-Day-05/assets/social-media-profile-photos-3.jpg",
            "id":5,
            "name": "Robert",
            "loans": [
@@ -312,7 +296,7 @@ var tableData = [
            "hasLoanHistory": true
          },
          {
-            "img": "social-media-profile-photos-9.jpg",
+            "img": "./PYP-Day-05/assets/social-media-profile-photos-9.jpg",
             "id":6,
             "name": "Lauren",
             "loans": [
@@ -404,7 +388,7 @@ var tableData = [
             "hasLoanHistory": true
           },
           {
-             "img": "unnamed.jpg",
+             "img": "./PYP-Day-05/assets/unnamed.jpg",
              "id":7,
              "name": "Alicia",
              "loans": [
@@ -496,7 +480,7 @@ var tableData = [
              "hasLoanHistory": true
            },
            {
-              "img": "01-shutterstock_476340928-Irina-Bg.jpg",
+              "img": "./PYP-Day-05/assets/01-shutterstock_476340928-Irina-Bg.jpg",
               "id":8,
               "name": "Sophia",
               "loans": [
@@ -588,7 +572,7 @@ var tableData = [
               "hasLoanHistory": false
             },
             {
-               "img": "01-shutterstock_476340928-Irina-Bg.jpg",
+               "img": "./PYP-Day-05/assets/01-shutterstock_476340928-Irina-Bg.jpg",
                "id":9,
                "name": "Leslie",
                "loans": [
@@ -680,7 +664,7 @@ var tableData = [
                "hasLoanHistory": true
              },
              {
-                "img": "pexels-photo-2078265.jpeg",
+                "img": "./PYP-Day-05/assets/pexels-photo-2078265.jpeg",
                 "id":10,
                 "name": "Barry",
                 "loans": [
@@ -772,7 +756,7 @@ var tableData = [
                 "hasLoanHistory": false
               },
               {
-                 "img": "pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg",
+                 "img": "./PYP-Day-05/assets/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg",
                  "id":11,
                  "name": "Zack",
                  "loans": [
@@ -864,7 +848,7 @@ var tableData = [
                  "hasLoanHistory": false
                },
                {
-                  "img": "profile-photos-750x530.jpeg",
+                  "img": "./PYP-Day-05/assets/profile-photos-750x530.jpeg",
                   "id":12,
                   "name": "Claudia",
                   "loans": [
@@ -956,10 +940,7 @@ var tableData = [
                   "hasLoanHistory": true
                 }
               ]
-function getData(event){
-  var x = event.target;
-  console.log(x.tagName)
-}
+
 function start(){
 
 for (var i = 0;i <= tableData.length;i++ ){
