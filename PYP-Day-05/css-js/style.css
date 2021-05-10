@@ -1,0 +1,129 @@
+body{
+background-color:lavenderblush}
+table{
+border-collapse: collapse;
+padding:0;
+}
+table tr img{
+    width:100px;
+    height:5rem;
+}
+body a{
+    font-size:2rem;
+    position:fixed;
+    right:17%;
+    top:12%;
+    z-index:3;
+    color:black;
+}
+body a:hover{
+    color:red;
+    font-size:2.3rem;
+    transition:font-size 0.3s;
+}
+table tr td:hover{
+    font-weight:bold;
+     transition:font-weight 0.5s;
+}
+table th, table td{
+    border:2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    color:black;
+}
+table img{
+    object-fit: contain;
+}
+table th:first-child{
+    padding:0.25rem;
+}
+#tableBody tr:hover{
+    background-color:rgb(170, 21, 21);
+    transition:background-color 0.7s;
+}
+#tableBody tr:hover td{
+    color:white;
+    transition:color 0.9s;
+}
+table th:nth-child(2), table th:nth-child(2){
+    padding:0.25rem 1rem;
+}
+table tr td{
+    font-size:1.2rem;
+}
+table th{
+    padding:0.1rem 0.6rem;
+    color:white;
+    background-color:rgb(170, 21, 21);
+    text-transform: capitalize;
+}
+body div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table tr{
+    cursor:pointer;
+}
+table tr th:hover{
+transition:all 0.4s;
+background-color: white;
+color:red;
+}
+#modal{
+    width:70%;
+    height:20rem;   
+    background-color:rgb(238, 235, 235);
+    margin:0 auto;
+    display: none;
+    position:fixed;
+    top:10%;
+    left:50%;
+    transform: translateX(-50%);
+}
+#modal table th{
+    padding:0.5rem;
+}
+#modal table td{
+    padding:0.5rem;
+}
+caption{
+    font-size:2rem;
+    padding:1rem 0;
+}
+form{
+display: flex;
+justify-content: center;
+padding:1.5rem;
+height: 50px;
+align-items: center;
+}
+form input{
+    width:50%;
+    padding:1rem 0.8rem;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    background-color:white;
+    font-size:1rem;
+}
+form label{   
+    vertical-align: middle;
+    font-size:1.5rem;
+    padding-right:2rem;
+}
+tr td select option{
+    width: 100%;
+    border:none;
+    outline: none;
+    color:red;
+}
+.status::first-letter{
+    text-transform: capitalize;
+}
+table tr td:last-child{
+    text-transform: capitalize;
+}
+#modal table tr td:nth-child(3){
+    text-transform: capitalize;
+}
